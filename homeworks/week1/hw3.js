@@ -1,29 +1,39 @@
 export const isPrime = (n) => {
-  if (!Number.isInteger(n))
-  {
-      return false;
-  };
+    if (!Number.isInteger(n))
+    {
+        return false;
+    };
+    //測試是否為整數
 
-  if (n<2){
-      return false;
-  };
+    if (n<2){
+        return false;
+    };
+    //測試是否小於2
 
-  if (n===2){
-      return true;
-  }
-  else if (n%2===0){
-      return false;
-  };
+    if (n===2){
+        return true;
+    }
+    else if (n%2===0){
+        return false;
+    };
+    //測試是否能被2整除
 
-  if (n===[3,5,7,9]){
-      for(i=3; i<11; i+2){
-          if (n%i===0){
-              return false;}
-          else 
-              return true;
-          }; 
-      };
-  return true;
-  };
 
-console.log (isPrime(98))
+    if ((n===3)|(n===5)|(n===7)){       
+        return true
+    }
+    //3,5,7為質數
+
+    for(let i=3; i<9; i+2){
+    //篩法：測試是否能被3,5,7整除
+        if (n%i===0){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    
+};
+    
+//console.log (isPrime(317)) //test
