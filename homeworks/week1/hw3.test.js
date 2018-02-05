@@ -21,5 +21,12 @@ describe("hw3", () => {
     expect(isPrime(38)).toBe(false)
   })
 
-})
+  it("should return correct answer when n = 97939", () => {
+    expect(isPrime(97939)).toBe(false)
+  })
 
+  it("should return correct answer when n = 97943", () => {
+    expect(isPrime(97943)).toBe(true)
+  })
+
+})

@@ -1,4 +1,4 @@
-const add = (a, b) => {
+export const add = (a, b) => {
     let str1 = a.split('').reverse();  
     let str2 = b.split('').reverse();  
     //拆成陣列再倒轉
