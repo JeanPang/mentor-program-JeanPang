@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  margin-top: 200px;
+  font-size: 0px;
+  width: 240px;
+  margin: 0px auto;
+}
+
+.display {
+  margin-top: 200px;
+  position: relative;
+  height: 80px;
+  background: #fefefe;
+  background: linear-gradient(135deg, #fefefe -1%, #fefefe 0%, #fefefe 5%, #f2f2f2 33%, #f2f2f2 33%, #f2f2f2 38%, #f2f2f2 38%, #f2f2f2 44%, #dbdbdb 82%, #d1d1d1 100%, #d1d1d1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1',GradientType=1 );
+}
+
+.result {
+  color: black;
+  font-size: 36px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+  padding-right: 15px;
+}
+
+.btnpad {
+  background: #e4f5fc;
+  background: linear-gradient(135deg, #e4f5fc 0%, #9fd8ef 28%, #9fd8ef 49%, #9fd8ef 49%, #2ab0ed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 );
+}
+
+.btn {
+  border: ridge 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
