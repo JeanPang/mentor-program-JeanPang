@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.top {
+  height: 250px;
+  overflow: hidden;
+  border: 0px;
+}
+.top img {
+  width: 100%;
+}
+
+.bottom {
+  height: 1170px;
+  background: #cdf6fc;
+  border: 0px;
+}
+
+.container {
+  margin: 0 auto;
+  position: absolute;
+  top: 150px;
+  left: calc((100% - 640px) / 2);
+  width: 640px;
+}
+
+.white {
+  background: white;
+  box-shadow: 0px 0px 10px rgba(51, 51, 102, 0.5);
+}
+
+.color {
+  height: 6px;
+  background: #cdf6fc;
+  border: 0px;
+}
+
+.inside {
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.des {
+  padding: 15px 15px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.br {
+  margin-top: 30px;
+}
+
+.br2 {
+  margin-top: 20px;
+}
+
+.content {
+  font-size: 13px;
+}
+
+.red {
+  color: red;
+}
+
+.question {
+  margin: 4px 0px;
+  padding: 10px 15px;
+}
+
+.qTitle {
+  font-size: 20px;
+}
+
+.reminder {
+  color: white;
+  margin-top: 10px;
+}
+
+.inputStyle {
+  width: 300px;
+  height: 25px;
+  border-width: 0px 0px 1px 0px;
+}
+
+input[type="text"] {
+  background: transparent;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #b1b1b1;
+}
+
+.radio {
+  font-size: 16px;
+}
+
+.button {
+  background-color: #5085ed;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 50px 0px 0px;
+  cursor: pointer;
+}
+
+.grey {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.small {
+  font-size: 12px;
+  padding: 35px 0px 20px;
+  color: #157887;
+}
+
+.medium {
+  font-size: 25px;
+  color: black;
+  opacity: 0.4;
+  padding-bottom: 30px;
+}
+.medium img {
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.medium:hover {
+  cursor: pointer;
+}
