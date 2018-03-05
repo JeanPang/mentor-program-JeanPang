@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>w4hw4：化繁為簡</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .title {
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin: 0px auto;
+        margin-top: 50px;
+        background: #5ac5f6;
+      }
+
+      .bar {
+        display: flex;
+        margin: 0px auto;
+        justify-content: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 20px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+      var element = q('.title')
+      var pressShow = document.querySelector('.show')
+      var pressHide = document.querySelector('.hide')
+      
+      pressShow.addEventListener('click', ()=> element.show());
+      pressHide.addEventListener('click', ()=> element.hide());
+        
+      function q(selector){
+        var target = document.querySelector(selector)
+        return {
+          show: ()=> target.style.visibility = "visible",
+          hide: ()=> target.style.visibility = "hidden"
+          //是物件所以中間要逗號
+          //show: ()=> target.style.display = "",
+          //hide: ()=> target.style.display = "none"
+          //不佔空間的話用display
+        }
+      }
+    });
+    </script>
+</head>
+
+<body>
+  <div class="title"></div>
+  <div class="bar">
+    <button class="show">show</button>
+    <button class="hide">hide</button>
+  </div>
+</body>
+
+</html>

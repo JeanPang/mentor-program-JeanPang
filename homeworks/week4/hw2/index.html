@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>w4hw2：仿Google表單</title>
+    <link rel="stylesheet" type="text/css" href=googleform.css>
+    <script type="text/javascript" src="googleform.js"></script>
+</head>
+<body>
+  <div class="top"> <img src="https://ppt.cc/fgOCTx@.jpg"/></div>
+  <div class="bottom"> </div>
+  <div class="container">
+    <div class="white">
+      <div class="color"></div>
+      <div class="inside">
+        <div class="des">
+          <div class="title">從零到一：程式導師實驗計畫報名表單</div>
+          <div class="content br">詳情請參考：https://medium.com/@hulitw/mentor-program-b5f96ae1eed1 </div>
+          <div class="content">記得填完表單之後還要寫信報名才算成功，兩者缺一不可！</div>
+          <div class="content br red">*必填</div>
+        </div>
+        <form>
+          <div class="question">
+            <div class="qTitle">電子郵件地址 <span class="red">*</span></div>
+            <input class="inputStyle br2" type="text" placeholder="您的電子郵件"/>
+            <div class="hidden reminder">這是必填問題</div>
+          </div>
+          <div class="question">
+            <div class="qTitle">暱稱 <span class="red">*</span></div>
+            <div class="content">該怎麼稱呼你</div>
+            <input class="inputStyle br2" type="text" placeholder="您的回答"/>
+            <div class="hidden reminder">這是必填問題</div>
+          </div>
+          <div class="question">
+            <div class="qTitle">報名類型 <span class="red">*</span></div>
+            <input class="br2" type="radio" name="choice"/>
+            <label class="radio">工程師培養班（每週付出四十小時，從零培養到工程師，學費是一個月薪水）</label>
+            <input class="br2" type="radio" name="choice"/>
+            <label class="radio">業餘班（依照個人目標訂立學習計畫，學費一萬五千元）</label>
+            <div class="hidden reminder">這是必填問題</div>
+          </div>
+          <div class="question">
+            <div class="qTitle">是否有程式相關背景？  <span class="red">*</span></div>
+            <div class="content">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</div>
+            <input class="inputStyle br2" type="text" placeholder="您的回答"/>
+            <div class="hidden reminder">這是必填問題</div>
+          </div>
+          <div class="question">
+            <div class="qTitle">其他</div>
+            <div class="content">其他任何你想講的</div>
+            <input class="inputStyle br2" type="text" placeholder="您的回答"/>
+          </div>
+          <input class="button" type="submit" value="提交"/>
+          <div class="content br2 grey">請勿利用 Google 表單送出密碼。</div>
+        </form>
+      </div>
+    </div>
+    <div class="footer small">Google 並未認可或建立這項內容。 檢舉濫用情形 - 服務條款 - 其他條款</div>
+    <div class="footer medium"> <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg"/><span>表單</span></div>
+  </div>
+</body>
+
+</html>
