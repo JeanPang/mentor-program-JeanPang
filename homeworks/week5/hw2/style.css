@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(72, 194, 190, 0.1);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+.navbar {
+  background: #48c2be;
+  color: white;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+}
+
+.navbar__logo {
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar__login {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  margin: 0px 50px;
+}
+
+.navber-space {
+  margin-left: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  background: white;
+}
+
+.article {
+  padding: 30px 30px 10px;
+}
+
+.article__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.article__more {
+  font-size: 14px;
+}
+
+.board {
+  padding: 30px;
+}
+
+.board__title {
+  display: block;
+  padding: 5px 15px;
+  font-weight: bold;
+  background: rgba(72, 194, 190, 0.3);
+}
+
+.board__comment {
+  padding: 15px 20px;
+  box-shadow: 0px 0px 4px rgba(51, 51, 102, 0.2);
+  margin: 15px 0px;
+}
+
+.board__form-title {
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+
+.board__form {
+  padding: 15px 15px;
+  box-shadow: 0px 0px 4px rgba(51, 51, 102, 0.2);
+}
+
+.board__form-textarea {
+  width: 550px;
+  height: 200px;
+  margin: 20px 0px 0px 35px;
+  border-color: rgba(0, 0, 0, 0.2);
+  resize: none;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.comment__author{
+  color: #008476;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 0px 0px;
+  display: inline-flex;
+}
+
+.comment__timestamp{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+}
+
+.comment__content{
+  padding: 5px 0px 8px;
+}
+
+.loginRemind {
+  color: #008476;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.subboard__form {
+  width: 530px;
+  margin: 10px 80px 0px;
+  background: rgba(72, 194, 190, 0.14);
+  padding: 5px 15px;
+}
+
+.subboard__form-textarea {
+  width: 450px;
+  height: 100px;
+  margin: 15px 0px 0px 20px;
+  border-color: rgba(0, 0, 0, 0.2);
+  resize: none;
+  font-size: 14px;
+}
+
+.subboard__form-enter {
+  display: block;
+  margin: 10px 20px 0px;
+  padding: 5px 15px;
+}
+
+.pagesnum {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.subcomment {
+  width: 530px;
+  margin: 10px 80px 0px;
+  background: rgba(72, 194, 190,0.14);
+  padding: 5px 15px;
+}
