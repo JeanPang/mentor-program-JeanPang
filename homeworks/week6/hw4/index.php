@@ -37,14 +37,14 @@
 					if(!isset($_COOKIE['certificate'])){
 						//沒有登入的話
 					?>
-					<button class="navbar-space"><a href='register.php'>註冊</a></button>
-					<button class="navber-space"><a href='login.php'>登入</a></button>
+					<button class="navbar-space navbar__button"><a href='register.php'>註冊</a></button>
+					<button class="navber-space navbar__button"><a href='login.php'>登入</a></button>
 					
 					<? } else {
 						//登入的話
 					?>
 
-					<button class="navber-space"><a href='logout.php'>登出</a></button>
+					<button class="navber-space navbar__button"><a href='logout.php'>登出</a></button>
 					<? }
 					?>
 				
@@ -59,6 +59,7 @@
 				<p>他上生紀界一料決來腳創發，實背回；門位也一活水始！處飯能為？其寫度心行源關報聯影，教開管，只紅見！
 				<p>在親臺，山提大開了，品壓當學小正人大縣真庭體成視，物之動以華斷技，入我深倒想。身去們月們的！表傳集花和委法規放過這極軍，他海用夫較。
 				<p>馬保外人這和子進故國：們見些開解不？絕的世人一明於中生格黑現品才事比格完活不白前留吸是場動父。現覺作因。個生於人起打海：不自不展？成雖體家求是一現切減……到女山看上一人只適他吃教過大從苦果但父，放其的輕生這分心於進臺製。著多離；天統得留但美包計本面，城生主的打影大德須們子起……天孩由機現麼此？前度家。
+				<button class="article__more">... 更多</button>
 			</div>
 		</div>
 

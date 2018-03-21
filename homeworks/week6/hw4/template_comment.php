@@ -7,7 +7,7 @@
 		//如果這條留言的user_id等於當前用戶的 user_id，則顯示編輯/刪除按鈕
 		//echo $cmmt_row['user_id'];
 		if($cmmt_row['user_id'] === $login_user_id){
-			echo '<button class="comment__edit">編輯</button>';
+			echo '<button class="comment__edit">編輯</button>&nbsp;';
 			echo '<button class="comment__delete">刪除</button>';
 		}
 		?>
@@ -45,11 +45,11 @@
 			?>
 
 		<!-- 子留言輸入區 -->
-		<form method="POST" class="subboard__form" action="add_comment.php">
-			<textarea class="subboard__form-textarea" name='content' placeholder="留言內容"></textarea>
-			<input name='parent_id' type='hidden' value='<? echo $cmmt_row['comment_id'] ?>' />
-			<input class='subboard__form-submit' type='submit' value='留言' />
-		</form>	
+			<form method="POST" class="subboard__form" action="add_comment.php">
+				<textarea class="subboard__form-textarea" name='content' placeholder="留言內容"></textarea>
+				<input name='parent_id' type='hidden' value='<? echo $cmmt_row['comment_id'] ?>' />
+				<input class='subboard__form-submit' type='submit' value='留言' />
+			</form>	
 			<?
 			}
 			?>

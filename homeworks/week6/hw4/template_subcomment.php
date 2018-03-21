@@ -8,7 +8,7 @@
 		//如果這條留言的user_id等於當前用戶的 user_id，則顯示編輯/刪除按鈕
 		//echo $cmmt_row['user_id'];
 		if($sub_row['user_id'] === $login_user_id){
-			echo '<button class="comment__edit">編輯</button>';
+			echo '<button class="comment__edit">編輯</button>&nbsp;';
 			echo '<button class="comment__delete">刪除</button>';
 		}
 		?>
