@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Jean's Todo List</title>
+	<style>
+		.container { 
+			margin-top: 20px; 
+		}
+	</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.add-todo').keydown(function(e){
+				if (e.key === 'Enter'){
+					//按enter時把值傳入
+					addTodo(e.target.value);
+				}
+			})
+
+			$('.todo-list').click(function(e){
+				const element = $(e.target)
+				if (element.hasClass('todo__delete')) {
+					//刪除->拿掉
+					element.parent().parent().remove();
+				} else if (element.hasClass('todo__done')){
+					if (element.hasClass('todo__undone')){
+						//標記未完成
+						element.parent().parent().removeClass('list-group-item-success');
+						element.removeClass('todo__undone');
+						element.removeClass('btn-primary');
+						element.addClass('btn-success');
+						element.text('完成');
+					} else {
+						//標記完成
+						element.parent().parent().addClass('list-group-item-success');
+						element.addClass('todo__undone');
+						element.removeClass('btn-success');
+						element.addClass('btn-primary');
+						element.text('未完成');
+					}
+
+				}
+			})
+		})
+
+		function addTodo(value){
+			const newTodo = getTodoHTML(value);
+			//清空欄位
+			$('.add-todo').val('');
+			//appendHTML
+			$('.todo-list').append(newTodo);
+		}
+
+		function getTodoHTML(value){
+			return 	`
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				${value}
+				<div>
+					<div class="btn btn-success todo__done">完成</div>
+					<div class="btn btn-danger todo__delete">刪除</div>
+				</div>
+			</li>`
+		}
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">add new todo</span>
+						</div>
+						<input type="text" class="form-control add-todo" placeholder="todo" aria-label="todo">
+				</div>
+
+				<ul class="list-group todo-list">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+  </body>
+</html>
