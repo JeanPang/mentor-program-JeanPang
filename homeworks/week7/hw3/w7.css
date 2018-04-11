@@ -1,0 +1,265 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+/*   for index.php    */
+
+* {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgb(247,247,249);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+  }
+  
+  .navbar__logo {
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .navbar__right {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    margin: 0px 20px;
+  }
+  
+  .navbar-space {
+    margin-left: 25px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 720px;
+    margin: 70px auto;
+    background: white;
+  }
+  
+
+  .article {
+    padding: 30px 30px 5px;
+  }
+  
+  .article__title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .article__more {
+    font-size: 14px;
+  }
+  
+  .board__comment {
+    padding: 15px 20px;
+    margin: 15px 0px;
+  }
+  
+  .board__form-title {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 0px;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #008476;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: #008476;
+  }
+  
+  .cmmt__author{
+    color: #008476;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 0px 0px;
+    display: inline-flex;
+  }
+  
+  .subboard {
+    padding: 0px 80px 0px 0px;
+  }
+  
+
+  .sub__form {
+    width: 650px;
+    max-width: 91.5%;
+    margin: 10px 80px 0px;
+    background: rgb(247,247,249);
+    padding: 5px 15px;
+  }
+  
+
+  
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+.cmmt-box{
+	background-color: white;
+	box-sizing: border-box;
+    width: 100%;
+    padding: 15px 50px 15px 15px;
+    box-shadow: 0px 0px 4px rgba(51, 51, 102, 0.2);
+}
+
+.cmmt__id{
+	display: none;
+}
+
+.cmmt__header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cmmt__nickname{
+	box-sizing: border-box;
+	font-weight: 400;
+}
+
+.cmmt__time{
+	display: inline-block;
+	font-weight: 300;
+	color: #CCCCCC;
+	margin-left: 20px;
+}
+
+.cmmt__edit-delete{
+	display: inline-block;
+	width: 72px;
+	font-size: 10px;
+	line-height: 24px;
+	text-align: right;
+}
+
+
+.cmmt__textarea{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 5px 0 10px;
+	display: block;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	height: 60px;
+	resize: none;
+}
+
+.cmmt__content{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 6px 0 10px;
+	padding-top: 6px;
+	border-top: 0.5px solid #d6d6d6;;
+	display: block;
+	font-weight: 300;
+	overflow-wrap: break-word;
+}
+
+.cmmt__btn{
+    font-size: 14px;
+}
+
+.sub-cmmt{
+	margin-left: 10%;
+	margin-top: 6px;
+  padding: 10px;
+  background: rgb(247,247,249);
+
+}
+
+.sub-cmmt__btn{
+    font-size: 8px;
+}
+
+.cmmt__edit,
+.cmmt__edited,
+.cmmt__delete,
+.sub-cmmt__collapse-toggle,
+.sub-cmmt__login-link,
+.cmmt__logout{
+    color: rgb(136,192,174);
+	font-size: 10px;
+}
+
+.cmmt__edit:hover,
+.cmmt__edited:hover,
+.cmmt__delete:hover,
+.sub-cmmt__collapse-toggle:hover,
+.sub-cmmt__login-link:hover,
+.cmmt__logout:hover{
+	cursor: pointer;
+    color: rgba(136,192,174,0.5);
+}
+
+.sub-cmmt__collapse-toggle+div{
+	display: none;
+}
+
+
+
+/*   for reg.php & login.php    */
+
+.login__input{
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	display: inline-block;
+	line-height: 26px;
+	margin-bottom: 6px;
+}
+
+.login__input::placeholder{
+	padding-left: 3px;
+}
+
+.login__btn{
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 16px;
+	font-weight: 300;
+	-webkit-appearance: none;
+}
+
+.login__title {
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+.login__title--centered{
+	text-align: center;
+
+}
+
+.login__title>a{
+	color: rgb(136,192,174);
+	font-size: 10px;
+}
+
+.login__title>a:hover{
+	cursor: pointer;
+	color: rgba(136,192,174,0.5);
+}
+
+.login__warning-toggle{
+	color: #d64848;
+	height: 21px;
+	visibility: hidden;
+}
+
