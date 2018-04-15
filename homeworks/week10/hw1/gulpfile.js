@@ -13,7 +13,7 @@ var uglify = require('gulp-uglify');
 //建立任務
 //轉譯sass、合併、autoprefix、壓縮css
 gulp.task('convertCSS', function(){
-    return gulp.src('./**/*.scss')
+    return gulp.src('./*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('./all.css'))
         .pipe(autoprefixer({
@@ -27,25 +27,28 @@ gulp.task('convertCSS', function(){
             path.extname = ".css";
           }))
         .pipe(gulp.dest('./build/css'));
-  })
+})
 
 //編譯並壓縮js
 gulp.task('convertJS', function(){
-    return gulp.src('./**/*.js')
-      .pipe(babel({ presets: ['es2015'] }))
-      .pipe(uglify())
-      .pipe(rename(function(path) {
-        path.basename += ".min";
-        path.extname = ".js";
-    }))
-      .pipe(gulp.dest('./build/js'))
-  })
+    return gulp.src('./*.js')
+        .pipe(babel({ presets: ['es2015'] }))
+        .pipe(uglify())
+        .pipe(rename(function(path) {
+            path.basename += ".min";
+            path.extname = ".js";
+        }))
+        .pipe(gulp.dest('./build/js'))
+})
 
 //監聽文件變化，自動執行任務
 gulp.task('watch', function(){
-    gulp.watch('./**/*.scss', ['convertCSS']);
-    gulp.watch('./**/*.js', ['convertJS']);
-  })
+    gulp.watch('./*.scss', ['convertCSS']);
+    gulp.watch('./*.js', ['convertJS']);
+})
 
+//combined.on('error', console.error.bind(console));
+//return combined;
 
-gulp.task('default', ['convertJS', 'convertCSS', 'watch']);
+gulp.task('default', ['convertCSS', 'convertJS', 'watch']);
+//gulp.task('default', ['convertCSS', 'convertJS']);
